@@ -1,3 +1,4 @@
 rootProject.name = 'java-enterprise'
 include 'gradle-hello-world'
+include 'osm-xml'
 
