@@ -1,5 +1,6 @@
 package org.polushin.java_enterprise.osm_jaxb;
 
+import javax.xml.bind.JAXBException;
 import javax.xml.stream.XMLStreamException;
 
 public final class Main {
@@ -7,7 +8,7 @@ public final class Main {
         final var file = Main.class.getClassLoader().getResourceAsStream("RU-NVS.osm");
         try (final var wrapper = new XMLReaderWrapper(file)) {
             printStatistics(StatisticsCollector.collectStatistics(wrapper.getReader()));
-        } catch (final XMLStreamException e) {
+        } catch (final XMLStreamException | JAXBException e) {
             e.printStackTrace();
         }
     }
