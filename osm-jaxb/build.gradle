@@ -6,7 +6,7 @@ group 'org.polushin.java-enterprise'
 version '1.0-SNAPSHOT'
 
 application {
-    mainClassName = 'org.polushin.java_enterprise.osm_xml.Main'
+    mainClassName = 'org.polushin.java_enterprise.osm_jaxb.Main'
 }
 
 repositories {
